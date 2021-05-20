@@ -17,6 +17,11 @@ ul{
 	overflow:hidden;
 }
 
+.container-1{
+	display:flex;
+	justify-content:space-around;
+}
+
 .button_1{
 	height: 38px;
 	background: #6495ed;
@@ -62,7 +67,8 @@ header #branding{
 }
 
 header #branding h1{
-	margin:0; 
+	margin:0;
+	line-height:1.2em;
 }
 
 header nav{
@@ -130,14 +136,13 @@ header a:hover{
 }
 
 #boxes .box{
-	float: left;
-	width: 30%;
+	flex:1;
 	padding:10px;
 	text-align: center;
 }
 
 #boxes .box img{
-	width:110px;
+	width:110px; 
 	height:110px;
 }
 
@@ -159,15 +164,11 @@ aside#sidebar .quote input, aside#sidebar .quote textarea{
 
 /* Main-col */
 article#main-col{
-	float: left;
-	width: 45%;
-	margin-right: 10px;
+	flex-basis: 48%;
 }
 
 article#second-col{
-	float: right;
-	width: 45%;
-	margin-left: 10px;
+	flex-basis: 48%;
 }
 
 /* Services */
